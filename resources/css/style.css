@@ -1,0 +1,126 @@
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header, .footer {
+    padding: 1% 5%;
+    background-color: #06752e;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.nav {
+    /*flex: 1;*/
+    align-self: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.hero,.info,.about,.contact,.footer {
+    flex:1;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    padding: 3% 0;
+    gap: 1%;
+    background-color: rgba(6, 116, 47, 0.25)
+}
+
+.hero-txt {
+    flex: 2;
+    max-width: 25%;
+}
+
+.hero p {
+    padding: 10px;
+}
+
+.hero-img {
+    flex: 1;
+    background-image: url(../images/lionsmanegrowblocks.jpg);
+    background-size: cover;
+    max-width: 15%;
+}
+
+button {
+    background-color: #06752e;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 3% 0;
+}
+
+.grow, .cook, .feed {
+    height: 200px;
+    width: 200px;
+    border: 3px solid #06752e;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+}
+
+.grow {
+    background-image: url(../images/growoystershroom.jpg);
+}
+
+.cook {
+    background-image: url(../images/lionsmanesteakchop.jpg);
+}
+
+.feed {
+    background-image: url(../images/ShroomFertilizer.jpg);
+}
+
+/*.grow, .cook, .feed*/ h1, h2 {
+    color: aliceblue;
+    /*font-size: 2em;
+    font-weight: bold;*/
+    text-shadow: 2px 2px 5px #06752e;
+}
+
+.about {
+    display: flex;
+}
+
+.contact {
+    display: flex;
+}
+/*
+.footer {
+    background-color: #06752e;
+}
+*/
