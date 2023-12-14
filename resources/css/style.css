@@ -159,6 +159,7 @@ button {
 .about {
     display: flex;
     background-color: #eee;
+    justify-content: center;
 }
 
 .contact {
