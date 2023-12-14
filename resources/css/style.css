@@ -16,19 +16,16 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .header h1 {
     text-shadow: 2px 2px 5px rgba(240, 248, 255, 0.25) !important;
     font-size: 3em;
+    margin: 0 auto;
 }
-/*
-.logo {
-    margin-right: auto;
-}
-*/
+
 .nav {
     /*flex: 1;*/
     align-self: center;
