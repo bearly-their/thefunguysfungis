@@ -10,8 +10,9 @@ body {
 
 
 .header, .footer {
-    padding: 1% 5%;
+    padding: 1% /*5%*/;
     background-color: #06752e;
+    min-height: 10vh;
 }
 
 .header {
@@ -26,15 +27,28 @@ body {
     margin: 0 auto;
 }
 
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo a {
+    margin-right: auto;
+}
+
 .nav {
-    /*flex: 1;*/
+    flex: 1;
     align-self: center;
+    display: flex;
+    justify-content: center;
 }
 
 .nav ul {
     display: flex;
     list-style: none;
     gap: 12px;
+    margin-left: auto;
 }
 
 .nav a {
@@ -42,9 +56,13 @@ body {
     color: aliceblue;
 }
 
-.hero,.info,.about,.contact,.footer {
-    flex:1;
+.section {
     min-height: 20vh;
+}
+
+.hero,.info,.about,.contact,.carousel/*,.footer*/ {
+    flex:1;
+    /*min-height: 20vh;*/
 }
 
 .hero {
@@ -153,7 +171,7 @@ button {
     visibility: visible;
 }
 
-.about {
+.about, .carousel {
     display: flex;
     background-color: #eee;
     justify-content: center;
