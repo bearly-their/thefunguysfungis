@@ -6,6 +6,7 @@ body {
 .content {
     display: flex;
     flex-direction: column;
+    background-image: url(../images/lionsmane.jpg);
 }
 
 
@@ -60,28 +61,32 @@ body {
     min-height: 20vh;
 }
 
-.hero,.info,.about,.contact,.carousel/*,.footer*/ {
-    flex:1;
+.hero,.carousel,.info,.about,.contact/*,.footer*/ {
+    flex: auto;
     /*min-height: 20vh;*/
 }
 
 .hero {
     display: flex;
     justify-content: center;
-    background-color: rgba(6, 116, 47, 0.25);
+    padding: 3%;
+    background-color: #fff
 }
 
 .hero-content {
     max-width: 75vw;
     display: flex;
     justify-content: center;
-    padding: 3% 0;
+    align-items: stretch;
+    padding: 3%;
     gap: 1%;
+    background-color: #c0dcca;
+    border-radius: 20px;
 }
 
 .hero-txt {
-    flex: 2;
-    max-width: 50%;
+    flex: 1;
+    /*max-width: 50%;*/
 }
 
 .hero p {
@@ -93,10 +98,11 @@ body {
 
 .hero-img {
     flex: auto;
-    background-image: url(../images/lionsmanegrowblocks.jpg);
+    background-image: url(../images/lionsmane.jpg);
     background-size: cover;
-    /*background-repeat: no-repeat;
-    max-width: 25%;*/
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    /*min-width: 25%;*/
 }
 
 button {
@@ -111,7 +117,8 @@ button {
     display: flex;
     justify-content: space-around;
     /*gap: 36px;*/
-    padding: 3% 5%;
+    padding: 10% 5%;
+    background-color: #fff;
 }
 
 .grow, .cook, .feed {
@@ -172,13 +179,60 @@ button {
 }
 
 .about, .carousel {
-    display: flex;
     background-color: #eee;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.funguys {
+    flex: 1;
+    display: flex;
     justify-content: center;
+    gap: 10%;
+    padding: 3%;
+
+}
+
+.thecult, .thecook {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.photo {
+    height: 300px;
+    width: 190px;
+}
+
+.thecult .photo {
+    background-image: url("../images/chrisdoggett.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.thecook .photo {
+    background-image: url("../images/mattbunting.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.blurb p {
+    padding: 10px;
+    font-weight: lighter;
+    color: #333;
+    line-height: 2em;
+    text-align: center;
 }
 
 .contact {
     display: flex;
+    background-color: #c0dcca;
 }
 /*
 .footer {
