@@ -4,8 +4,8 @@
 <br>
 <h3>Areas I'm currently working</h3>
 <ul>
-<li><s>Hero section image alignment<s></li>
-<li><s>About section alignment in general<s></li>
+<li><s>Hero section image alignment</s></li>
+<li><s>About section alignment in general</s></li>
 <li>Carousel and contact sections</li>
 </ul>
 <br>
